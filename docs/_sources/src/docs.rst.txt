@@ -13,6 +13,7 @@ Please learn from the sections below to install the ``lifespline`` on your human
    :caption: Contents:
 
    docs/ethics
+   docs/literature
 
 
 ==================
