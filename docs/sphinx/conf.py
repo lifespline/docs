@@ -23,6 +23,9 @@ extensions = [
 
     # test code snippets
     'sphinx.ext.doctest',
+
+    # maths
+    'sphinx.ext.imgmath',
 ]
 
 templates_path = ['_templates']
