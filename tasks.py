@@ -9,9 +9,9 @@ def docs(ctx, step='build'):
     cmds = [
         "cd docs",
         "make html",
-        "cp -a _build/html/. .",
+        "cp -a _build/html/. ../static/",
         "make clean",
-        "echo && echo Your static documentation pages can be found at \'docs\' && echo",
+        "echo && echo Your static documentation pages can be found at \'static\' && echo",
     ]
 
     ctx.run(';'.join(cmds))
