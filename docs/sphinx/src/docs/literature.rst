@@ -45,6 +45,7 @@ Documentation
 Podcasts
 ========
 
+* `The Journal <https://open.spotify.com/show/0KxdEdeY2Wb3zr28dMlQva?si=9bc5f27f97a14995>`_
 * |Tech Crunch|
 
 .. |Tech Crunch| raw:: html
