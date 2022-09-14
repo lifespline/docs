@@ -2,6 +2,8 @@
 Literature
 ==========
 
+Below, a curated list of quality literature of any media: articles, blogs, videos, books, podcasts.
+
 .. _github:
 
 Github
@@ -39,3 +41,12 @@ Documentation
 
 * `Write The Docs <https://www.writethedocs.org/guide/writing/beginners-guide-to-docs/>`_
 * `Sphinx Tutorial <https://sphinx-tutorial.readthedocs.io/>`_
+
+Podcasts
+========
+
+* |Tech Crunch|
+
+.. |Tech Crunch| raw:: html
+
+   <a href="https://open.spotify.com/show/5yxk2ietkyM0dRr4Jnp7xa?si=64355e7ac7134b30" target="_blank"></a>
