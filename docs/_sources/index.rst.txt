@@ -6,6 +6,8 @@ lifespline-docs
    :maxdepth: 2
    :caption: Content
 
+      src/about
+
 ==================
 Indices and tables
 ==================
