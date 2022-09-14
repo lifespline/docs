@@ -1,0 +1,390 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+<link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="Contributing" href="../contributing.html" /><link rel="prev" title="Docs" href="../docs.html" />
+
+    <meta name="generator" content="sphinx-5.1.1, furo 2022.06.21"/>
+        <title>The World - lifespline-docs 1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?digest=40978830699223671f4072448e654b5958f38b89" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../../index.html"><div class="brand">lifespline-docs 1.0.0 documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../../index.html">
+  
+  
+  <span class="sidebar-brand-text">lifespline-docs 1.0.0 documentation</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
+  <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../about.html">About</a></li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="../docs.html">Docs</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">The World</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../docs.html#indices-and-tables">Indices and tables</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../contributing.html">Contributing</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../contributing/getting_started.html">Getting Started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contributing/bootstrap.html">Install Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contributing/build.html">Build</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contributing/semantic_versioning.html">Semantic Versioning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contributing/deploy.html">Deploy</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing.html#indices-and-tables">Indices and tables</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main">
+          <section id="the-world">
+<h1>The World<a class="headerlink" href="#the-world" title="Permalink to this heading">#</a></h1>
+<section id="philosophy">
+<h2>Philosophy<a class="headerlink" href="#philosophy" title="Permalink to this heading">#</a></h2>
+<p>Learn the conceptual framework below to format your understanding of the world.</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Reality <span class="math notranslate nohighlight">\(\mathbf{R}\)</span> is anything that can be identified as something:</dt><dd><ul>
+<li><p>a tree</p></li>
+<li><p>a person</p></li>
+<li><p>a thought</p></li>
+<li><p>a number</p></li>
+<li><p>a concept</p></li>
+<li><p><em>etc.</em></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p><span class="math notranslate nohighlight">\(\mathbf{B} \neq \emptyset\)</span> is the set of behaviours.</p></li>
+<li><p>A behaviour is a set of behaviours <span class="math notranslate nohighlight">\(B_i \subset \mathbf{B}\)</span> (a set of behaviours can losely be denoted by behaviour as a linguistic abuse)</p></li>
+<li><dl class="simple">
+<dt>A behaviour admits other names:</dt><dd><ul>
+<li><p>agent</p></li>
+<li><p>event</p></li>
+<li><p><em>etc</em></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>A <span class="math notranslate nohighlight">\(B_i\)</span> is that which persists through <code class="docutils literal notranslate"><span class="pre">change</span></code>, or that which is said to <strong>change</strong>. <code class="docutils literal notranslate"><span class="pre">change</span></code> is equivalent with <code class="docutils literal notranslate"><span class="pre">identity</span></code> in that you only understand one concept through the other and vice-versa. Examples:</dt><dd><ul>
+<li><p>a person</p></li>
+<li><p>a personality</p></li>
+<li><p>the act of observing</p></li>
+<li><p>the act of thinking</p></li>
+<li><p>a tree</p></li>
+<li><p>a concept</p></li>
+<li><p>a thought</p></li>
+<li><p><em>etc.</em></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>A behaviour <span class="math notranslate nohighlight">\(b\)</span> has a <code class="docutils literal notranslate"><span class="pre">status</span></code> <span class="math notranslate nohighlight">\(\in \{\)</span> <code class="docutils literal notranslate"><span class="pre">done</span></code> <span class="math notranslate nohighlight">\(\} \subset \{\)</span> <code class="docutils literal notranslate"><span class="pre">potential</span></code> <span class="math notranslate nohighlight">\(\}\)</span>. The <cite>status=done</cite> is simply a label for the behaviours the agent perceives as <strong>actual</strong>, or what the agent perceives to be the <strong>actual world</strong>. An actual behaviour is also said to be indexed to a running interval in <em>time</em>, or what the agent denotes as <cite>time=present</cite>.</p></li>
+<li><p>A <span class="math notranslate nohighlight">\(B_i\)</span> belongs to a class of complexity <span class="math notranslate nohighlight">\(C_i\)</span>, <em>i.e.</em>, it has varying values of <code class="docutils literal notranslate"><span class="pre">complexity</span></code>: <span class="math notranslate nohighlight">\(B_i \in C_j\)</span>. A class of complexity defines the <strong>amount</strong> of <code class="docutils literal notranslate"><span class="pre">work</span></code> it requires to have <span class="math notranslate nohighlight">\(B_i\)</span>’s status be changed to <cite>status=done</cite>. There is no SI unit for <code class="docutils literal notranslate"><span class="pre">work</span></code>. It can be <span class="math notranslate nohighlight">\(J\)</span>, <span class="math notranslate nohighlight">\(s\)</span>, computational complexity, <em>etc.</em></p></li>
+<li><dl class="simple">
+<dt>Each <span class="math notranslate nohighlight">\(B_i\)</span> has an <code class="docutils literal notranslate"><span class="pre">engine</span></code> <span class="math notranslate nohighlight">\(E_i\)</span> such that <span class="math notranslate nohighlight">\(E_i\)</span> is able to generate a certain amount of work, which requires that <span class="math notranslate nohighlight">\(E_i\)</span> has the adequate:</dt><dd><ul>
+<li><p>resources <span class="math notranslate nohighlight">\(S_i\)</span></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ethics</span></code>: conceptual understanding of reality</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">drive</span></code></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">time</span></code> is an abstraction over a binary change of behaviour <code class="docutils literal notranslate"><span class="pre">status</span></code>, i.e., it is a <code class="docutils literal notranslate"><span class="pre">sequence</span></code> <span class="math notranslate nohighlight">\(q\)</span> of <code class="docutils literal notranslate"><span class="pre">status</span></code> changes.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">physics</span></code> are the <code class="docutils literal notranslate"><span class="pre">sequence</span></code> <span class="math notranslate nohighlight">\(q\)</span> of <code class="docutils literal notranslate"><span class="pre">status</span></code> changes that the agent denotes as <em>natural laws</em> when the agent perceives the set of behaviours through the abstraction ot <code class="docutils literal notranslate"><span class="pre">time</span></code>, <em>i.e.</em>, the agent recognizes that assigning a subset of <span class="math notranslate nohighlight">\(q\)</span> in time always coincides with the same behaviour <span class="math notranslate nohighlight">\(b\)</span> to be rendered <code class="docutils literal notranslate"><span class="pre">actual</span></code>, what the agent denotes as <strong>causality</strong>. This means that <code class="docutils literal notranslate"><span class="pre">time</span></code> is an abstraction, but that conceptualizing behaviours from within this abstraction, enables the agent to change deterministically the <code class="docutils literal notranslate"><span class="pre">status</span></code> of some behaviours.</p></li>
+<li><dl class="simple">
+<dt>resources <span class="math notranslate nohighlight">\(S_i\)</span> include, for <span class="math notranslate nohighlight">\(B_i\)</span> = <span class="math notranslate nohighlight">\(B_0\)</span> = <code class="docutils literal notranslate"><span class="pre">person</span></code>, or <em>that which behaves as a person</em>:</dt><dd><ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">energy</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">motivation</span></code></p></li>
+<li><p>…</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>A behaviour of interest is that of <span class="math notranslate nohighlight">\(B_0\)</span> = <code class="docutils literal notranslate"><span class="pre">person</span></code> The <code class="docutils literal notranslate"><span class="pre">drive</span></code> of <span class="math notranslate nohighlight">\(B_0\)</span> is keeping <span class="math notranslate nohighlight">\(S_i\)</span> stable, which is understood by <em>the pursuit of happiness</em></p></li>
+</ul>
+</section>
+<section id="affecting-behaviours-agent-dynamics">
+<h2>Affecting Behaviours: Agent Dynamics<a class="headerlink" href="#affecting-behaviours-agent-dynamics" title="Permalink to this heading">#</a></h2>
+<p>By agent we mean any behaviour <span class="math notranslate nohighlight">\(B_i\)</span>, but we also mean specifically <span class="math notranslate nohighlight">\(B_0\)</span>. <cite>agent dynamics</cite> is the framework in which the agent perceives <em>its affection on its perceived behaviours</em>. The framework reduces the behaviours complexity by dividing the behaviour into different behaviours recursively of inferior complexity classes. When the refactoring behaviour is of complexity <span class="math notranslate nohighlight">\(C_{0}\)</span>, the agent is able affect the necessary amount of work to change the behaviour’s state to <code class="docutils literal notranslate"><span class="pre">done</span></code> (<span class="math notranslate nohighlight">\(E_0 \in C_0\)</span>). These factored behaviours are also denoted by <code class="docutils literal notranslate"><span class="pre">tasks</span></code>. Below, an example of an agent factoring behaviours until the behaviour is of complexity <span class="math notranslate nohighlight">\(C_{0}\)</span>:</p>
+<p>Taken separately, the actual <code class="docutils literal notranslate"><span class="pre">work</span></code> that the agent can affect/generate:</p>
+<p>The units of work are distributed in function of <span class="math notranslate nohighlight">\(S_i\)</span> in <code class="docutils literal notranslate"><span class="pre">batches</span></code>:</p>
+<p><cite>happiness</cite> varies to a large extend as a function of the commitment to these units of work.</p>
+</section>
+<section id="complexity-reduction">
+<h2>Complexity Reduction<a class="headerlink" href="#complexity-reduction" title="Permalink to this heading">#</a></h2>
+<p>The process of complexity reduction is the process of understanding what the project consists of, and achieving precisely that.</p>
+<ul class="simple">
+<li><p>Each <code class="docutils literal notranslate"><span class="pre">node</span></code> reduces the complexity of the AC of the parent <code class="docutils literal notranslate"><span class="pre">node</span></code> by virtue of making the AC more specific.</p></li>
+<li><p>When the specification is sufficient so that the <code class="docutils literal notranslate"><span class="pre">node</span></code> can be exerted work upon by the agent, the <code class="docutils literal notranslate"><span class="pre">node</span></code> is a <code class="docutils literal notranslate"><span class="pre">task</span></code></p></li>
+<li><p>the derivation of AC in between nodes is <strong>semantic</strong> (requires a human agent)</p></li>
+<li><p>The complexity of a node is reduced to 0 by reducing the complexity of its AC to a specification sufficient so that the <code class="docutils literal notranslate"><span class="pre">node</span></code> can be exerted work upon by the agent, the <code class="docutils literal notranslate"><span class="pre">node</span></code> is a <code class="docutils literal notranslate"><span class="pre">task</span></code></p></li>
+<li><p>a <code class="docutils literal notranslate"><span class="pre">node</span></code> reduces either to <strong>more than one node</strong> or to a <strong>task</strong></p></li>
+<li><p>a <code class="docutils literal notranslate"><span class="pre">node</span></code> can either be derived <strong>in more than one</strong> <code class="docutils literal notranslate"><span class="pre">node</span></code> or be transformed into a <code class="docutils literal notranslate"><span class="pre">task</span></code></p></li>
+<li><p>a <code class="docutils literal notranslate"><span class="pre">node</span> <span class="pre">network</span></code> is in continuous transformation. Its transformation in time represents the <strong>chain of complexity reduction operations</strong> the development team performed on the root <code class="docutils literal notranslate"><span class="pre">node</span></code>.</p></li>
+<li><p>The complexity reduction process is not executed on iterations of a fixed duration. Instead, as soon as a <strong>set of reduction branches has been completed</strong> and the team has <code class="docutils literal notranslate"><span class="pre">capacity</span></code> to work on the branches, a <code class="docutils literal notranslate"><span class="pre">batch</span></code> or work is set in motion automatically.</p></li>
+<li><p>Each <code class="docutils literal notranslate"><span class="pre">node</span></code>’s AC contains an <code class="docutils literal notranslate"><span class="pre">effort</span></code> whose precision increases as the complexity reduces to a workable task. The <code class="docutils literal notranslate"><span class="pre">effort</span></code> precision is updated backwards analytically, and frontwards semantically (by the human agent performing the reduction)</p></li>
+</ul>
+<p>Depending on the team’s <code class="docutils literal notranslate"><span class="pre">capacity</span></code>, a batch is automatically <code class="docutils literal notranslate"><span class="pre">engaged</span></code>.</p>
+</section>
+<section id="behaviour-dynamics">
+<h2>Behaviour Dynamics<a class="headerlink" href="#behaviour-dynamics" title="Permalink to this heading">#</a></h2>
+<p>Below, the world as <strong>behaviours dynamics</strong>  as perceived by <span class="math notranslate nohighlight">\(B_0\)</span>.</p>
+</section>
+<section id="doc-definition-of-versioning-and-control">
+<h2>DOC - Definition Of Versioning And Control<a class="headerlink" href="#doc-definition-of-versioning-and-control" title="Permalink to this heading">#</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">doc</span></code> enables the agent to optimize <code class="docutils literal notranslate"><span class="pre">focus</span></code> by using <code class="docutils literal notranslate"><span class="pre">git</span></code>.</p>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="../contributing.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Contributing</div>
+              </div>
+              <svg><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="../docs.html">
+              <svg><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Docs</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2022, lifespline
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            <div class="icons">
+              
+            </div>
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            Contents
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">The World</a><ul>
+<li><a class="reference internal" href="#philosophy">Philosophy</a></li>
+<li><a class="reference internal" href="#affecting-behaviours-agent-dynamics">Affecting Behaviours: Agent Dynamics</a></li>
+<li><a class="reference internal" href="#complexity-reduction">Complexity Reduction</a></li>
+<li><a class="reference internal" href="#behaviour-dynamics">Behaviour Dynamics</a></li>
+<li><a class="reference internal" href="#doc-definition-of-versioning-and-control">DOC - Definition Of Versioning And Control</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/scripts/furo.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    </body>
+</html>

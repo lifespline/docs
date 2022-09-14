@@ -11,6 +11,7 @@ lifespline-docs
    :caption: Contents:
 
    src/about
+   src/docs
    src/contributing
 
 ==================
