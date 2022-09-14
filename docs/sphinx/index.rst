@@ -2,11 +2,12 @@
 lifespline-docs
 ===============
 
-some text here
-
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Contents:
+
+   src/about
+   src/contributing
 
 ==================
 Indices and tables
