@@ -7,7 +7,7 @@ The documentation shows how to build the documentation from source.
 Install System and Package dependencies
 ---------------------------------------
 
-Read through :download:`bootstrap <../../../bootstrap.sh>`.
+Read through :download:`bootstrap <../../../../bootstrap.sh>`.
 
 Build Your Own Version
 ----------------------

@@ -7,11 +7,11 @@ import os
 def docs(ctx, step='build'):
     """Generate documentation."""
     cmds = [
-        "cd docs",
+        "cd docs/sphinx",
         "make html",
-        "cp -a _build/html/. ../static/",
+        "cp -a _build/html/. ..",
         "make clean",
-        "echo && echo && echo && echo Your static documentation pages can be found at \'static\' \(Ctrl+Click\) && echo",
+        "echo && echo && echo && echo Your static documentation pages can be found at \'docs\' \(Ctrl+Click\) && echo",
     ]
 
     ctx.run(';'.join(cmds))
