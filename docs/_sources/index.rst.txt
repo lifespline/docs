@@ -4,11 +4,7 @@ lifespline-docs
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
-
-   src/about
-   src/contributing
-
+   :caption: Content
 
 ==================
 Indices and tables
