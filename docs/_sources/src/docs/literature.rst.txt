@@ -46,8 +46,4 @@ Podcasts
 ========
 
 * `The Journal <https://open.spotify.com/show/0KxdEdeY2Wb3zr28dMlQva?si=9bc5f27f97a14995>`_
-* |Tech Crunch|
-
-.. |Tech Crunch| raw:: html
-
-   <a href="https://open.spotify.com/show/5yxk2ietkyM0dRr4Jnp7xa?si=64355e7ac7134b30" target="_blank"></a>
+* `Tech Crunch <https://open.spotify.com/show/5yxk2ietkyM0dRr4Jnp7xa?si=64355e7ac7134b30>`_
