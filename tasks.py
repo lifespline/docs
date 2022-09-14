@@ -11,7 +11,7 @@ def docs(ctx, step='build'):
         "make html",
         "cp -a _build/html/. ../static/",
         "make clean",
-        "echo && echo Your static documentation pages can be found at \'static\' && echo",
+        "echo && echo && echo && echo Your static documentation pages can be found at \'static\' \(Ctrl+Click\) && echo",
     ]
 
     ctx.run(';'.join(cmds))
